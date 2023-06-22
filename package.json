@@ -1,0 +1,22 @@
+{
+  "name": "hashnode-enhancer",
+  "version": "1.0.0",
+  "description": "`next-chrome` is a [Next.js](https://nextjs.org/) starter project to bootstrap a new Chrome extension.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gumshoe21/hashnode-enhancer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gumshoe21/hashnode-enhancer/issues"
+  },
+  "homepage": "https://github.com/Gumshoe21/hashnode-enhancer#readme",
+  "devDependencies": {
+    "@types/chrome": "^0.0.237"
+  }
+}
