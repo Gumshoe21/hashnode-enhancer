@@ -1,4 +1,5 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-  console.log('hi from contentscripts.js')
-  chrome.runtime.sendMessage({ greeting: 'Hello' })
+window.addEventListener('load', (event) => {
+  const firstDivText = document.querySelector('div')?.innerText
+  console.log('Page fully loaded')
+  chrome.runtime.sendMessage({ greeting: 'Hello', firstDivText })
 })
