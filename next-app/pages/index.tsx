@@ -1,18 +1,18 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import type { NextPage } from 'next'
+
 const Home: NextPage = () => {
+  const [metadata, setMetadata] = useState(null)
+
   useEffect(() => {
-    chrome.runtime.sendMessage({ greeting: 'Hello', anythingIWant: 'anythingIDesire' }, (response) => {
-      if (chrome.runtime.lastError) {
-        console.log(chrome.runtime.lastError.message)
-      } else {
-        console.log(response?.farewell)
-        console.log(response?.documentBody)
-      }
+    // Request the metadata from the background script
+    chrome.runtime.sendMessage({ action: 'getPageMetadata' }, (response) => {
+      console.log(response)
+      setMetadata(response.metadata)
     })
   }, [])
 
-  return <div>hi</div>
+  return <div>Article Name from Metadata: {metadata?.headline}</div>
 }
 
 export default Home

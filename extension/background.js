@@ -1,8 +1,15 @@
+let pageMetadata = null
+
+// Save the metadata when it's received from the content script
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-  if (request.greeting === 'Hello') {
-    console.log('Message received!')
-    console.log(request.firstDivText) // now contains the text of the first div
-    sendResponse({ farewell: 'Goodbye', firstDivText: request.firstDivText })
+  if (request.action === 'setPageMetadata') {
+    pageMetadata = request.metadata
   }
-  return true // keeps the message channel open until sendResponse is called
+})
+
+// Send the metadata when it's requested from the popup
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+  if (request.action === 'getPageMetadata') {
+    sendResponse({ metadata: pageMetadata })
+  }
 })
