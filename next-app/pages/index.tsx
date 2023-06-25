@@ -12,7 +12,7 @@ const Home: NextPage = () => {
     })
   }, [])
 
-  return <div>Article Name from Metadata: {metadata?.headline}</div>
+  return <div>Article Name from Metadata: {metadata}</div>
 }
 
 export default Home

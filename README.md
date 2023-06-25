@@ -1,14 +1,11 @@
-`next-chrome` is a [Next.js](https://nextjs.org/) starter project to bootstrap a new Chrome extension.
+# Hashnode Enhancer
 
-[Helpful Tips for Starting a Next.js Chrome Extension | CSS-Tricks](https://css-tricks.com/nextjs-chrome-extension-starter/)
+A Google Chrome extension that supplements your Hashnode experience.
 
-```sh
-cd next-app
+# What/who is this extension for?
 
-yarn # run once
+This extension has a very simple goal: provide a reader of a Hashnode article with supplementary reading material and other resources (YouTube videos, courses to take, etc.) based on the topic(s) being discussed.
 
-yarn build # on macOS
-yarn build:linux # on Linux
-```
+# Project Journal
 
-![Screenshot](./screenshot.png)
+For this project, I'm keeping a [journal](project-journal.md) that will keep track of all my problems and struggles faced during the development of this extension.
