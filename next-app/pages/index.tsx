@@ -42,12 +42,19 @@ const Home: NextPage = () => {
       {/* Begin Grid*/}
       <section className='section section--grid'>
         <div className='section--grid__container'>
-          <div className='section--grid__item'>Your Resources</div>
-          <div className='section--grid__item'>Explore</div>
-          <div className='section--grid__item'>Reading History</div>
+          <div className='section--grid__item'>
+            <a href='/saved-resources'> Your Resources</a>
+          </div>
+          <div className='section--grid__item'>
+            <a href='/reading-history'> Reading History</a>
+          </div>
+          <div className='section--grid__item'>
+            <a href='https://www.hashnode.com/explore'>Explore</a>
+          </div>
           <div className='section--grid__item'>Share</div>
         </div>
       </section>
+      <section className='section section--generate-resources'></section>
     </main>
   )
 }
