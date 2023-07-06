@@ -38,11 +38,13 @@ a {
 
 .section {
   margin-top: 2rem;
+
+  // main section
   &--main {
     display: flex;
     align-items: center;
     justify-content: center;
-    &-header {
+    &__header {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -55,69 +57,70 @@ a {
       }
     }
   }
-
+  // resources section
   &--resources {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    &-header {
+    &__header {
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
+      h2 {
+        font-size: 2.4rem;
+        width: fit-content;
+        margin: 0 auto;
+      }
     }
-    h2 {
-      font-size: 2.4rem;
-      width: fit-content;
-      margin: 0 auto;
-    }
-    &-container {
+
+    &__container {
       display: flex;
       flex-direction: column;
       row-gap: 1.2rem;
       margin-top: 2rem;
     }
-    &-resource {
+    .resource {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       row-gap: 0.4rem;
       margin-top: 1rem;
-      &-title {
+      &__title {
         h3 {
           font-size: 1.8rem;
         }
       }
-      &-author {
+      &__author {
         h4 {
           font-size: 1.2rem;
         }
       }
     }
   }
-
+  // grid section
   &--grid {
     padding-top: 2rem;
-    &-container {
+    &__container {
       border: 1px solid green;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
       place-items: center;
-      &-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid black;
-        height: 100%;
-        width: 100%;
-        padding: 4rem 0rem;
-        font-size: 1.4rem;
-        font-weight: bold;
-        font-style: italic;
-      }
+    }
+    &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+      height: 100%;
+      width: 100%;
+      padding: 4rem 0rem;
+      font-size: 1.4rem;
+      font-weight: bold;
+      font-style: italic;
     }
   }
 }

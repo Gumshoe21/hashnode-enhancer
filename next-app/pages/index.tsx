@@ -23,17 +23,17 @@ const Home: NextPage = () => {
     <main className='container'>
       {/*Begin Section Main */}
       <section className='section section--main'>
-        <header className='section--main-header'>
+        <header className='section--main__header'>
           <h1>hashnode enhancer</h1>
         </header>
         {/* End Section Main*/}
       </section>
       {/* Begin Section Recently Generated Resources */}
       <section className='section section--resources'>
-        <header className='section--resources-header'>
+        <header className='section--resources__header'>
           <h2>Recent Resources</h2>
         </header>
-        <div className='section--resources-container'>
+        <div className='section--resources__container'>
           <Resource title='How to Draw Fat Yoshi in CSS' author='Gum W. Shoe' />
           <Resource title='How to Eat More Food More Efficiently' author='Fat "Beeg Boi" Yoshi' />
           {/* End Section Recent Resources */}
@@ -41,11 +41,11 @@ const Home: NextPage = () => {
       </section>
       {/* Begin Grid*/}
       <section className='section section--grid'>
-        <div className='section--grid-container'>
-          <div className='section--grid-container-item'>Your Resources</div>
-          <div className='section--grid-container-item'>Explore</div>
-          <div className='section--grid-container-item'>Reading History</div>
-          <div className='section--grid-container-item'>Share</div>
+        <div className='section--grid__container'>
+          <div className='section--grid__item'>Your Resources</div>
+          <div className='section--grid__item'>Explore</div>
+          <div className='section--grid__item'>Reading History</div>
+          <div className='section--grid__item'>Share</div>
         </div>
       </section>
     </main>

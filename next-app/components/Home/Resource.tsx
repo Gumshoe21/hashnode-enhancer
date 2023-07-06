@@ -7,11 +7,11 @@ interface IResource {
 
 const Resource: NextPage<IResource> = function ({ title, author }) {
   return (
-    <div className='section--resources-resource'>
-      <div className='section--resources-resource-title'>
+    <div className='resource'>
+      <div className='resource__title'>
         <h3>{title}</h3>
       </div>
-      <div className='section--resources-resource-author'>
+      <div className='resource__author'>
         <h4>{author}</h4>
       </div>
     </div>
