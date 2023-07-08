@@ -17,9 +17,10 @@
     "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"],
-      "@/components/*": ["./components/*"]
-    }
+			"@/*": ["./*"],
+			"@/components/*": ["./components/*"],
+			"@/fonts": ["./styles/fonts"]
+		}
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
