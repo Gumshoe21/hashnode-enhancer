@@ -1,7 +1,7 @@
 import '@/styles/main.scss'
 import '@/styles/base/_reset.scss'
 import type { AppProps } from 'next/app'
-import { universeTE20Thin } from '@/fonts'
+import { universeTE20Thin, universLTStdCn } from '@/fonts'
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
@@ -9,6 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 			<style jsx global>{`
 				:root {
 					--Univers: ${universeTE20Thin.style.fontFamily};
+					--UniversLTS: ${universLTStdCn.style.fontFamily};
 				}
 			`}</style>
 			<Component {...pageProps} />

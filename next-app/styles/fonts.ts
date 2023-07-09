@@ -6,4 +6,10 @@ const universeTE20Thin = localFont({
 	variable: '--Univers'
 })
 
-export { universeTE20Thin }
+const universLTStdCn = localFont({
+	src: './../public/fonts/UniversLTStd-Cn.woff2',
+	display: 'swap',
+	variable: '--UniversLTS'
+})
+
+export { universeTE20Thin, universLTStdCn }
