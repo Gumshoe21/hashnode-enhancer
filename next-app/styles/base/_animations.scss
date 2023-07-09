@@ -1,0 +1,27 @@
+.fill {
+	-webkit-transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+	transition: all ease 0.8s;
+	overflow: hidden;
+	&--top-left {
+		&:hover {
+			box-shadow: inset 200px 200px 150px 0px var(--hashnode-blue);
+		}
+	}
+	&--top-right {
+		&:hover { 
+			box-shadow: inset -200px 200px 150px 0px var(--hashnode-blue);
+		}
+	}
+	&--bottom-right {
+		&:hover {
+			box-shadow: inset -200px -200px 150px 0px var(--hashnode-blue);
+		}
+	}
+	&--bottom-left {
+		&:hover {
+			box-shadow: inset 200px -200px 150px 0px var(--hashnode-blue);
+		}
+	}
+}
+	
