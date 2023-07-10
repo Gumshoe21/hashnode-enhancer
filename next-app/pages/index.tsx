@@ -3,9 +3,10 @@ import type { NextPage } from 'next'
 import Resource from '@/components/Home/Resource'
 const Home: NextPage = () => {
   const [metadata, setMetadata] = useState(null)
+	const [isArticle, setIsArticle] = useState<boolean>(true)
 
-  {
-    /*
+	{
+		/*
   useEffect(() => {
     // Request the metadata from the background script
     {
@@ -17,9 +18,16 @@ const Home: NextPage = () => {
     }
   }, [])
   */
-  }
+	}
 
-  return (
+	/* TO-DO 
+		1. Create a handler that sends JSON-LD data to backend 
+			a. onClick 
+	
+	
+	*/
+
+	return (
 		<main className='container'>
 			{/*Begin Section Main */}
 			<section className='section section--main'>
@@ -56,7 +64,17 @@ const Home: NextPage = () => {
 					</a>
 				</div>
 			</section>
-			<section className='section section--generate-resources'></section>
+			<section className='section section--generate-resources'>
+				{isArticle ? (
+					<div className='section--generate-resources__generate-button'>
+						<button>generate resources</button>
+					</div>
+				) : (
+					<div>
+						You're not on a Hashnode article page. Try <a href='#'>exploring</a> some articles.
+					</div>
+				)}
+			</section>
 		</main>
 	)
 }
