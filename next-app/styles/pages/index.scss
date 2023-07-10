@@ -100,6 +100,32 @@
 
 			}
     }
+    
+   
+  }
+  &--generate-resources {
+
+    display:flex;
+    justify-content:center;
+    align-items:center; 
+    &__generate-button { 
+      flex: 1 1 0;
+      display:flex;
+       & button {
+        flex: 1 1 0;
+        font-size: 2.0rem;
+        padding: 2rem 1rem;
+        border: 2px solid var(--hashnode-blue);
+        border-radius: 8px;
+        transition-property: color,background-color;
+        transition-duration: 0.4s;
+        transition-timing-function: ease-in;
+        &:hover {
+          background-color: var(--hashnode-blue);
+          color: white;
+        }
+      }
+    }
   }
 
   &--saved-resource {
